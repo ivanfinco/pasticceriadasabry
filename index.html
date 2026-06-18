@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Pasticceria Gelateria da Sabry | Pasticceria e Ristorazione a Due Carrare</title>
+  <meta name="description" content="Pasticceria Gelateria da Sabry a Due Carrare (Padova). Recensioni reali di clienti su paste da colazione, gelato artigianale e tramezzini farciti in Via Mincana.">
+  <meta name="keywords" content="pasticceria due carrare, gelateria due carrare, tramezzini due carrare, colazione due carrare, pasticceria da sabry">
+  <meta name="author" content="Pasticceria Gelateria da Sabry">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header id="main-header">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        Da <span>Sabry</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#" class="nav-link active" data-sec="home">Home</a></li>
+        <li><a href="#prodotti" class="nav-link" data-sec="prodotti">I Nostri Prodotti</a></li>
+        <li><a href="#recensioni" class="nav-link" data-sec="recensioni">Recensioni Google</a></li>
+        <li><a href="#contatti" class="nav-link" data-sec="contatti">Contatti & Orari</a></li>
+        <li><a href="tel:+39049526297" class="btn btn-primary nav-cta"><i class="fa-solid fa-phone"></i> Chiama Ora</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Apri menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-accent"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Pasticceria Gelateria da Sabry</h1>
+        <p class="hero-desc">Un punto di ritrovo storico in Via Mincana, dove ogni giorno vi accogliamo con il profumo delle nostre brioches artigianali, la freschezza del nostro gelato e la prelibatezza dei nostri famosi tramezzini.</p>
+        <div class="hero-actions">
+          <a href="#prodotti" class="btn btn-primary">Cosa Offriamo</a>
+          <a href="#recensioni" class="btn btn-secondary">Cosa Dicono i Clienti</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-img-border"></div>
+        <img src="assets/hero_pastries.png" alt="Pasticceria artigianale e caffè sul tavolo di da Sabry" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section (Simpler, review-driven structure) -->
+  <section id="prodotti">
+    <h2 class="section-title">I Nostri Prodotti</h2>
+    <p class="section-subtitle-desc" style="text-align: center; color: var(--color-text-muted); margin-top: -40px; margin-bottom: 50px; font-size: 1.05rem;">La qualità artigianale e la freschezza delle nostre specialità quotidiane</p>
+    
+    <div class="showcase-tabs">
+      <button class="tab-btn active" data-tab="paste">Colazione & Paste</button>
+      <button class="tab-btn" data-tab="tramezzini">Tramezzini & Salato</button>
+      <button class="tab-btn" data-tab="gelato">Gelateria Artigianale</button>
+    </div>
+
+    <!-- Tab Paste -->
+    <div class="showcase-content active" id="tab-paste">
+      <div class="showcase-image-side">
+        <img src="assets/category_pastry.png" alt="Le nostre brioches e paste artigianali per la colazione">
+      </div>
+      <div class="showcase-info-side">
+        <h3 class="showcase-subtitle">Brioches e Pasticceria Artigianale</h3>
+        <p class="showcase-text">La colazione da noi è un rito speciale. Ogni mattina vi aspetta un ricco assortimento di brioches fresche e sfogliate e pasticceria artigianale di alta qualità.</p>
+        <div class="showcase-items-list">
+          <div class="showcase-item">
+            <div>
+              <span class="item-name">Brioches per la Colazione</span>
+              <p class="item-desc">"Le brioches sono sempre ottime per iniziare la giornata." — Davide B.</p>
+            </div>
+          </div>
+          <div class="showcase-item">
+            <div>
+              <span class="item-name">Pasticceria Fresca</span>
+              <p class="item-desc">"Ampia scelta di paste fresche, bignè e pasticceria artigianale di buona qualità." — Chiara T.</p>
+            </div>
+          </div>
+          <div class="showcase-item">
+            <div>
+              <span class="item-name">Torte Artigianali su Ordinazione</span>
+              <p class="item-desc">"Ordiniamo spesso le torte per le nostre feste e compleanni, sempre ottime." — Marco V.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Tramezzini -->
+    <div class="showcase-content" id="tab-tramezzini">
+      <div class="showcase-image-side">
+        <img src="assets/category_savoury.png" alt="I nostri famosi tramezzini veneti super farciti">
+      </div>
+      <div class="showcase-info-side">
+        <h3 class="showcase-subtitle">I Nostri Tramezzini Farciti</h3>
+        <p class="showcase-text">I nostri tramezzini sono preparati freschi ogni giorno, morbidissimi e generosamente farciti. Perfetti per un pranzo veloce, uno spuntino o un aperitivo in compagnia.</p>
+        <div class="showcase-items-list">
+          <div class="showcase-item">
+            <div>
+              <span class="item-name">Tramezzini Morbidissimi</span>
+              <p class="item-desc">"I tramezzini sono superlativi: morbidissimi, bombati e ricchi di ripieno." — Elena M.</p>
+            </div>
+          </div>
+          <div class="showcase-item">
+            <div>
+              <span class="item-name">Snack e Rosticceria Salata</span>
+              <p class="item-desc">"Perfetto per un pranzo veloce o un aperitivo salato con tramezzini freschi." — Luca S.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Gelato -->
+    <div class="showcase-content" id="tab-gelato">
+      <div class="showcase-image-side">
+        <img src="assets/category_gelato.png" alt="Gelato artigianale cremoso gusto pistacchio e cioccolato">
+      </div>
+      <div class="showcase-info-side">
+        <h3 class="showcase-subtitle">Gelato Artigianale</h3>
+        <p class="showcase-text">Durante la bella stagione, deliziamo i nostri ospiti con un gelato artigianale cremoso, mantecato in loco con materie prime fresche e selezionate.</p>
+        <div class="showcase-items-list">
+          <div class="showcase-item">
+            <div>
+              <span class="item-name">Gelato Cremoso di Produzione Propria</span>
+              <p class="item-desc">"Gelato artigianale cremoso e saporito, in particolare il gusto pistacchio." — Andrea P.</p>
+            </div>
+          </div>
+          <div class="showcase-item">
+            <div>
+              <span class="item-name">Coppe e Asporto</span>
+              <p class="item-desc">"Ideale per fare merenda con le coppe al tavolo o da asporto in vaschetta." — Sara L.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Reviews Section -->
+  <section class="reviews-section" id="recensioni">
+    <h2 class="section-title">Cosa Dicono i Clienti su Google Maps</h2>
+    
+    <div class="reviews-slider">
+      <div class="review-card">
+        <span class="review-quote-icon">“</span>
+        <div>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"Ottimo bar pasticceria a Due Carrare, tappa fissa per la colazione della mattina. Le brioches sono sempre ottime e il servizio è svolto con gentilezza."</p>
+        </div>
+        <span class="review-author">Davide B.</span>
+      </div>
+      
+      <div class="review-card">
+        <span class="review-quote-icon">“</span>
+        <div>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"I tramezzini sono superlativi: morbidissimi, bombati e ricchi di ripieno. Ideali per una pausa pranzo veloce o per un aperitivo sfizioso in compagnia."</p>
+        </div>
+        <span class="review-author">Elena M.</span>
+      </div>
+
+      <div class="review-card">
+        <span class="review-quote-icon">“</span>
+        <div>
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">"Pasticceria artigianale di buona qualità con ampia scelta di paste fresche e bignè. Abbiamo ordinato diverse torte per compleanni e sono sempre rimasti tutti molto soddisfatti."</p>
+        </div>
+        <span class="review-author">Chiara T.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Info Section -->
+  <section class="contact-section" id="contatti">
+    <h2 class="section-title">Contatti & Orari</h2>
+    <div class="contact-grid">
+      <!-- Left Column: Info -->
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="info-details">
+            <h4>Indirizzo</h4>
+            <p>Via Mincana, 7<br>35020 Due Carrare (Padova)</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="info-details">
+            <h4>Telefono</h4>
+            <a href="tel:+39049526297">+39 049 526297</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="info-details">
+            <h4>Email</h4>
+            <a href="mailto:info@pasticceriadasabry.it">info@pasticceriadasabry.it</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="info-details">
+            <h4>Orari di Apertura</h4>
+            <div class="hours-grid">
+              <span class="hours-day">Lunedì - Sabato</span>
+              <span class="hours-time">06:30 - 19:30</span>
+              <span class="hours-day">Domenica</span>
+              <span class="hours-time">07:00 - 19:30</span>
+            </div>
+            <p class="hours-note"><i class="fa-solid fa-circle-info"></i> Gli orari possono variare nei festivi o d'estate. Si consiglia di telefonare per verifiche.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Map -->
+      <div class="map-container">
+        <iframe 
+          title="Mappa di Pasticceria Gelateria da Sabry a Due Carrare"
+          src="https://maps.google.com/maps?q=Pasticceria%20Gelateria%20da%20Sabry%20Via%20Mincana%207%20Due%20Carrare&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <a href="#" class="footer-logo">Da <span>Sabry</span></a>
+    <div class="footer-socials">
+      <a href="https://www.google.com/maps/place/Pasticceria+Gelateria+da+Sabry/@45.2913889,11.8146419,17z" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Google Maps"><i class="fa-solid fa-map-location-dot"></i> Google Maps</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Pasticceria Gelateria da Sabry. Tutti i diritti riservati.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
