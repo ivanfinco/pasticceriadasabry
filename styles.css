@@ -697,3 +697,119 @@ footer {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 }
+
+/* ==========================================================================
+   Sticky Phone CTA Widget
+   ========================================================================== */
+.sticky-phone-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.sticky-phone-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--color-gold) 0%, #B0945D 100%);
+  color: var(--color-text-light);
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(154, 126, 74, 0.35);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation: sticky-pulse 3s infinite;
+}
+
+.sticky-phone-btn .sticky-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  transition: var(--transition-smooth);
+}
+
+.sticky-phone-btn .sticky-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-phone-btn .sticky-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.sticky-phone-btn .sticky-number {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 1px;
+}
+
+/* Hover & Active States */
+.sticky-phone-btn:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(154, 126, 74, 0.45);
+  background: linear-gradient(135deg, var(--color-gold-hover) 0%, var(--color-gold) 100%);
+}
+
+.sticky-phone-btn:hover .sticky-icon {
+  background-color: var(--color-text-light);
+  color: var(--color-gold);
+  transform: rotate(15deg);
+}
+
+/* Pulse animation to draw subtle attention */
+@keyframes sticky-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(154, 126, 74, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(154, 126, 74, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(154, 126, 74, 0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .sticky-phone-container {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .sticky-phone-btn {
+    padding: 10px 16px;
+    gap: 10px;
+  }
+  
+  .sticky-phone-btn .sticky-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+  
+  .sticky-phone-btn .sticky-title {
+    font-size: 0.78rem;
+  }
+  
+  .sticky-phone-btn .sticky-number {
+    font-size: 0.7rem;
+  }
+}
+
